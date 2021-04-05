@@ -6,5 +6,10 @@
       "**/.*",
       "**/node_modules/**"
     ]
+    // Dynamic Links will start with https://stonk-maker.web.app/stonk
+    "appAssociation": "AUTO",
+    "rewrites": [ {
+      "source": "/stonk/**", "dynamicLinks": true
+    } ]
   }
 }
