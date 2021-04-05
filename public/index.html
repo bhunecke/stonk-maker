@@ -23,14 +23,18 @@
   <body onload="stonk()">
     <h1>Stonk Maker von BH ;)</h1>
 
-    <canvas id="myCanvas" width="500" height="350" style="border:0px solid #d3d3d3;">Your browser does not support the HTML canvas tag.</canvas>
+    <div>
+      <canvas id="myCanvas" width="500" height="350" style="border:0px solid #d3d3d3;">Your browser does not support the HTML canvas tag.</canvas>
 
-    <p>
-    <input id="myCaption" type="text" placeholder="Stonks" value="Stonks" maxlength="20" onclick="resetLbl()" onkeydown="enterLbl(this)">
-    <button type="button" onclick="stonk()">Erstellen</button>
-    </p>
-    Kopieren: Rechtsklick &rarr; Bild kopieren
-    <!--<button type="button" name="button" onclick="copy()">Direktlink zum Bild kopieren</button>-->
+      <div>
+        <br>
+        <input id="myCaption" type="text" placeholder="Stonks" value="Stonks" maxlength="20" onclick="resetLbl()" onkeydown="enterLbl(this)">
+        <button type="button" onclick="stonk()">Erstellen</button>
+        <br><br>
+        Kopieren: Rechtsklick &rarr; Bild kopieren
+        <!--<button type="button" name="button" onclick="copy()">Direktlink zum Bild kopieren</button>-->
+      </div>
+    </div>
 
     <script>
       function stonk() {
@@ -61,6 +65,7 @@
         }
       }
 
+      /*
       var canvas = document.querySelector("myCanvas");
       var link = document.createElement('a');
       link.innerHTML = 'download image';
@@ -69,6 +74,7 @@
         link.download = "mypainting.png";
       }, false);
       document.body.appendChild(link);
+      */
 
       function copy() {
         var caption = document.getElementById("myCaption").value;
