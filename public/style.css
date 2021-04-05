@@ -26,6 +26,7 @@ body {
 }
 
 h1 {
+    color: #212121;
     font-size: 45px;
     font-family: 'Train One', cursive;
     font-style: italic;
