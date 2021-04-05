@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #212121;
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: whitesmoke;
+        color: black;
+    }
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+
+}
