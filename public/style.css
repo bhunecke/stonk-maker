@@ -30,10 +30,35 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-
 h1 {
     font-size: 45px;
     font-family: 'Train One', cursive;
     font-style: italic;
     text-shadow: 3px 3px red, 6px 6px #00aeff, 9px 9px #ffff00;
+}
+canvas {
+    cursor: url(stonk-favicon.png) 24 24, pointer;
+}
+button {
+    border: none;
+    border-radius: 2px;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+button:hover {
+    box-shadow: 3px 3px red, 6px 6px #00aeff, 9px 9px #ffff00;
+}
+input[type=text] {
+    border: none;
+    border-radius: 2px;
+    padding: 8px 15px;
+    text-align: left;
+    display: inline-block;
+    font-size: 14px;
 }
