@@ -22,6 +22,10 @@
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+
+    <script>
+      firebase.analytics().logEvent('notification_received');
+    </script>
   </head>
   <body onload="stonk()">
     <h1>Stonk Maker von BH ;)</h1>
