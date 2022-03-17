@@ -1,39 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Train+One&display=swap');
 
 @media (prefers-color-scheme: dark) {
-    canvas {
-        box-shadow: 0 0 5px white;
-    }
     h1 {
       color: whitesmoke;
-    }
-    button {
-      background-color: whitesmoke;
-    }
-    input[type=text] {
-        background-color: whitesmoke;
     }
 }
 
 @media (prefers-color-scheme: light) {
-    canvas {
-        box-shadow: 0 0 5px #212121;
-    }
     h1 {
       color: #404040;
     }
-    button {
-      background-color: #b0b0b0;
-    }
-    input[type=text] {
-        background-color: #b0b0b0;
-    }
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
 h1 {
     font-size: 45px;
     font-family: 'Train One', cursive;
@@ -43,6 +21,7 @@ h1 {
 canvas {
     cursor: url(stonk-favicon.png) 24 24, pointer;
 }
+/*
 button {
     border: none;
     border-radius: 2px;
@@ -52,7 +31,7 @@ button {
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
 }
 button:hover {
@@ -66,3 +45,4 @@ input[type=text] {
     display: inline-block;
     font-size: 14px;
 }
+*/

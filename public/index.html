@@ -19,9 +19,6 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- own stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
     <!-- Core Firebase JS SDK -->
     <script src="/__/firebase/8.3.2/firebase-app.js"></script>
     <!-- Firebase Analytics -->
@@ -39,6 +36,8 @@
       .header-txt {
         font-family: 'Train One', cursive;
         font-weight: bold;
+        cursor: default;
+        user-select: none;
         -webkit-transition-duration: 0.4s; /* Safari */
         transition-duration: 0.4s;
       }
@@ -55,15 +54,28 @@
       </div>
     </nav>
 
-    <div>
-      <canvas id="myCanvas" width="500" height="350" style="border:0px solid #d3d3d3;">Your browser does not support the HTML canvas tag.</canvas>
-
-      <div>
-        <br>
-        <input id="myCaption" type="text" placeholder="Stonks" value="Stonks" maxlength="20" onclick="resetLbl()" onkeydown="enterLbl(this)">
-        <button type="button" onclick="stonk()">Erstellen</button>
-        <br><br>
-        Kopieren: Rechtsklick &rarr; Bild kopieren
+    <div class="container-lg my-4">
+      <div class="card bg-dark">
+          <div class="card-body">
+              <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+                  <div class="mx-3">
+                    <canvas id="stonkCanvas" class="rounded" width="500" height="350">Your browser does not support the HTML canvas tag.</canvas>
+                  </div>
+                  <div class="mx-3 mt-3 mt-sm-0">
+                    <div class="row row-cols-lg-auto g-3 align-items-center">
+                      <div class="col-12">
+                        <input id="stonkCaption" type="text" class="form-control" placeholder="Stonks" value="Stonks" maxlength="20" onclick="resetLbl()" onkeydown="enterLbl(this)">
+                      </div>
+                      <div class="col-12">
+                        <button type="button" class="btn btn-primary" onclick="stonk()">Erstellen</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-footer text-muted">
+              <span class="text-reset align-top">Kopieren: Rechtsklick &rarr; Bild kopieren</span>
+          </div>
       </div>
     </div>
 
@@ -74,9 +86,9 @@
       firebase.analytics();
 
       function stonk() {
-        var c = document.getElementById("myCanvas");
+        var c = document.getElementById("stonkCanvas");
         var ctx = c.getContext("2d");
-        var caption = document.getElementById("myCaption").value;
+        var caption = document.getElementById("stonkCaption").value;
         ctx.font = "800 35px Arial";
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
@@ -90,7 +102,7 @@
         }
       }
       function resetLbl() {
-        var label = document.getElementById("myCaption");
+        var label = document.getElementById("stonkCaption");
         if (label.value == "Stonks") {
           label.value = "";
         }
