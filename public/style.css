@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Train+One&display=swap');
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #212121;
-        color: white;
-    }
     canvas {
         box-shadow: 0 0 5px white;
     }
@@ -20,10 +16,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        background-color: whitesmoke;
-        color: black;
-    }
     canvas {
         box-shadow: 0 0 5px #212121;
     }
