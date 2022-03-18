@@ -3,8 +3,8 @@
   <head>
     <title>Stonk Maker</title>
 
-    <link rel="icon" href="icons/favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="icon" href="img/icons/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
 
     <!-- Required meta tags -->
@@ -44,6 +44,10 @@
       .header-txt:hover {
         text-shadow: 3px 3px red, 6px 6px #00aeff, 9px 9px #ffff00;
       }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
     </style>
   </head>
   <body onload="stonk()">
@@ -79,6 +83,12 @@
       </div>
     </div>
 
+    <div class="fixed-bottom">
+      <div class="float-end mb-2 me-2">
+          <a href="privacy.html" class="text-muted">Privacy</a>
+      </div>
+    </div>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
@@ -94,7 +104,7 @@
         ctx.textAlign = "center";
         ctx.s
         var template = new Image();
-        template.src = "stonk-template.png";
+        template.src = "img/stonk-template.png";
         template.onload = () => {
           ctx.drawImage(template, 0, 0, 500, 350);
           ctx.fillText(caption, 350, 243);
