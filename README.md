@@ -8,3 +8,11 @@ Stonk Maker von BH ;)
 Extrem professioneller Stonk Meme Generator.
 
 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+### Screenshots
+![Screenshots](screen.png)
+
+### Features
+- Stonks generieren
+- überall!
+- als Web App installierbar
